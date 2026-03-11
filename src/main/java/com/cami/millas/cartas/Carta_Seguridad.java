@@ -6,7 +6,7 @@ public class Carta_Seguridad extends Carta {
     public Carta_Seguridad() {}
 
     public Carta_Seguridad(int id, String subtipo){
-        super(id, "SEGURIDAD");
+        super(id, TipoCarta.SEGURIDAD);
         this.subtipo = subtipo;
     }
 }
