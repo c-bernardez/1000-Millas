@@ -13,7 +13,7 @@ public class CartaEnMano {
     //separamos el @Id del @ManyToOne porque Hibernate necesita que los campos del IdClass sean tipos simples, pero para nuestra BD necesitamos usar un objeto tipo Mano.
     @Id
     @Column(name="id_mano")
-    private int id_mano;
+    private int idMano;
 
     @ManyToOne //Muchas CartasEnMano pueden pertenecer a la misma mano (ya que varia la carta)
     @JoinColumn(name="id_mano", updatable = false, insertable = false) //@JoinColumn para relaciones entre entidades
@@ -21,7 +21,7 @@ public class CartaEnMano {
 
     @Id
     @Column(name="id_carta")
-    private int id_carta;
+    private int idCarta;
 
     @ManyToOne
     @JoinColumn(name="id_carta", updatable = false, insertable = false)
@@ -35,10 +35,10 @@ public class CartaEnMano {
 
     public CartaEnMano(Mano mano, Carta carta, EstadoMano estado) {
         this.mano = mano;
-        this.id_mano = mano.getId_mano();
+        this.idMano = mano.getIdMano();
 
         this.carta = carta;
-        this.id_carta = carta.getId();
+        this.idCarta = carta.getIdCarta();
 
         this.estado = estado;
     }

@@ -3,7 +3,6 @@ package com.cami.millas.modelo;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Entity
 @Getter
@@ -12,7 +11,7 @@ import lombok.ToString;
 public class Partida {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private int id_partida;
+    private int idPartida;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)

@@ -3,7 +3,6 @@ package com.cami.millas.modelo;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Entity
 @Getter
@@ -12,7 +11,7 @@ import lombok.ToString;
 public class Jugador {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id_jugador;
+    private int idJugador;
 
     @Column(nullable = false, unique = false)
     private String nombre;

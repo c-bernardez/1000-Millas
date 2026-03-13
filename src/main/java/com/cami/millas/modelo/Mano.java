@@ -10,7 +10,7 @@ import lombok.Setter;
 public class Mano {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id_mano;
+    private int idMano;
 
     @ManyToOne
     @JoinColumn(nullable = false)

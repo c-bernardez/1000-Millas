@@ -13,7 +13,7 @@ public abstract class Carta {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     @Column(name="id_carta")
-    private int id;
+    private int idCarta;
 
     @Enumerated(EnumType.STRING)
     @Column(name="tipo_carta", nullable=false)
