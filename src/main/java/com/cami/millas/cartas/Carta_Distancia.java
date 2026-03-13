@@ -17,8 +17,8 @@ public class Carta_Distancia extends Carta {
 
     public Carta_Distancia() {}
 
-    public Carta_Distancia(int id, Distancia distancia){
-        super(id,TipoCarta.DISTANCIA);
+    public Carta_Distancia(Distancia distancia){
+        super(TipoCarta.DISTANCIA);
         this.distancia = distancia;
     }
 }

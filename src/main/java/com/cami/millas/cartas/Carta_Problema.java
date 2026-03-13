@@ -14,8 +14,8 @@ public class Carta_Problema extends Carta {
 
     public Carta_Problema() {}
 
-    public Carta_Problema(int id, TipoProblema tipo_problema){
-        super(id, TipoCarta.PROBLEMA);
+    public Carta_Problema(TipoProblema tipo_problema){
+        super(TipoCarta.PROBLEMA);
         this.tipo_problema = tipo_problema;
     }
 }

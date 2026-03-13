@@ -15,8 +15,8 @@ public class Carta_Solucion extends Carta {
 
     public Carta_Solucion() {}
 
-    public Carta_Solucion(int id, TipoSolucion tipo_solucion){
-        super(id, TipoCarta.SOLUCION);
+    public Carta_Solucion(TipoSolucion tipo_solucion){
+        super(TipoCarta.SOLUCION);
         this.tipo_solucion = tipo_solucion;
     }
 }

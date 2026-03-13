@@ -21,8 +21,7 @@ public abstract class Carta {
 
     public Carta(){}
 
-    public Carta(int id, TipoCarta tipo){
-        this.id = id;
+    public Carta(TipoCarta tipo){
         this.tipo = tipo;
     }
 }
