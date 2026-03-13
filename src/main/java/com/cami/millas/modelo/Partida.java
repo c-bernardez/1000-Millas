@@ -1,13 +1,25 @@
 package com.cami.millas.modelo;
 
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Entity
+@Getter
+@Setter
+@Table(name="partida")
 public class Partida {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id_partida;
-    private String estado; // [EN CURSO, FINALIZADA]
+
+    @Column(nullable = false)
+    private EstadoPartida estado;
 
     public Partida() {}
 
-    public Partida(int id_partida, String estado) {
-        this.id_partida = id_partida;
+    public Partida(EstadoPartida estado) {
         this.estado = estado;
     }
 }
