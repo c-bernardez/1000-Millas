@@ -14,6 +14,7 @@ public class Partida {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id_partida;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private EstadoPartida estado;
 
