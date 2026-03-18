@@ -12,12 +12,12 @@ import lombok.Setter;
 public class Carta_Seguridad extends Carta {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private TipoSeguridad subtipo;
+    private TipoSeguridad tipoSeguridad;
 
     public Carta_Seguridad() {}
 
-    public Carta_Seguridad(TipoSeguridad subtipo){
+    public Carta_Seguridad(TipoSeguridad tipoSeguridad){
         super(TipoCarta.SEGURIDAD);
-        this.subtipo = subtipo;
+        this.tipoSeguridad = tipoSeguridad;
     }
 }

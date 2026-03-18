@@ -13,12 +13,12 @@ public class Carta_Solucion extends Carta {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private TipoSolucion tipo_solucion;
+    private TipoSolucion tipoSolucion;
 
     public Carta_Solucion() {}
 
-    public Carta_Solucion(TipoSolucion tipo_solucion){
+    public Carta_Solucion(TipoSolucion tipoSolucion){
         super(TipoCarta.SOLUCION);
-        this.tipo_solucion = tipo_solucion;
+        this.tipoSolucion = tipoSolucion;
     }
 }
