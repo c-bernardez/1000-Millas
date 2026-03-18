@@ -7,6 +7,8 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(name = "carta_problema")
+@PrimaryKeyJoinColumn(name="idCarta")
 public class Carta_Problema extends Carta {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)

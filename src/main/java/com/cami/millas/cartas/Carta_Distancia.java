@@ -8,6 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(name="carta_distancia")
+@PrimaryKeyJoinColumn(name="idCarta")
 public class Carta_Distancia extends Carta {
     //'extends' makes 'Carta_Distancia' a specialization of 'Carta'
 
