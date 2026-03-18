@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @Table(name="carta")
 public abstract class Carta {
-    //abstract means this class can be accessed directly, save for its child classes. It makes sense since we won't have a type-less card.
+    //abstract means this class can't be accessed directly, save for its child classes. It makes sense since we won't have a type-less card.
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     @Column(name="id_carta")
