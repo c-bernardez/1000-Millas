@@ -9,14 +9,14 @@ import lombok.Setter;
 @Setter
 @Table(name="carta_seguridad")
 @PrimaryKeyJoinColumn(name="idCarta")
-public class Carta_Seguridad extends Carta {
+public class CartaSeguridad extends Carta {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private TipoSeguridad tipoSeguridad;
 
-    public Carta_Seguridad() {}
+    public CartaSeguridad() {}
 
-    public Carta_Seguridad(TipoSeguridad tipoSeguridad){
+    public CartaSeguridad(TipoSeguridad tipoSeguridad){
         super(TipoCarta.SEGURIDAD);
         this.tipoSeguridad = tipoSeguridad;
     }

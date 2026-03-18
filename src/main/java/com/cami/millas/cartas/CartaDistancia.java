@@ -9,16 +9,16 @@ import lombok.Setter;
 @Setter
 @Table(name="carta_distancia")
 @PrimaryKeyJoinColumn(name="idCarta")
-public class Carta_Distancia extends Carta {
-    //'extends' makes 'Carta_Distancia' a specialization of 'Carta'
+public class CartaDistancia extends Carta {
+    //'extends' makes 'CartaDistancia' a specialization of 'Carta'
 
     @Enumerated(EnumType.STRING)
     @Column(nullable=false) //logica del juego va a ser c.getDistancia.getValor()
     private Distancia distancia;
 
-    public Carta_Distancia() {}
+    public CartaDistancia() {}
 
-    public Carta_Distancia(Distancia distancia){
+    public CartaDistancia(Distancia distancia){
         super(TipoCarta.DISTANCIA);
         this.distancia = distancia;
     }
