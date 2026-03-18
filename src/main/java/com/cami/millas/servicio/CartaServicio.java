@@ -37,37 +37,38 @@ public class CartaServicio {
         //CartaProblema
         for (int i = 0; i <3; i++) {
             cartaRepositorio.save(new CartaProblema(TipoProblema.CHOQUE));
-            cartaRepositorio.save(new CartaProblema(TipoProblema.faltaCOMBUSTIBLE));
+            cartaRepositorio.save(new CartaProblema(TipoProblema.FALTA_COMBUSTIBLE));
             cartaRepositorio.save(new CartaProblema(TipoProblema.PINCHADURA));
         }
         for (int i = 0; i <5; i++) {
             cartaRepositorio.save(new CartaProblema(TipoProblema.STOP));
         }
         for (int i = 0; i <4; i++) {
-            cartaRepositorio.save(new CartaProblema(TipoProblema.velocidadMAX));
+            cartaRepositorio.save(new CartaProblema(TipoProblema.VELOCIDAD_MAX));
         }
 
         //CartaSolucion
         for (int i = 0; i < 6; i++) {
             cartaRepositorio.save(new CartaSolucion(TipoSolucion.TALLER));
             cartaRepositorio.save(new CartaSolucion(TipoSolucion.COMBUSTIBLE));
-            cartaRepositorio.save(new CartaSolucion(TipoSolucion.ruedaAUXILIO));
-            cartaRepositorio.save(new CartaSolucion(TipoSolucion.finVelocidadMAXIMA));
+            cartaRepositorio.save(new CartaSolucion(TipoSolucion.RUEDA_AUXILIO));
+            cartaRepositorio.save(new CartaSolucion(TipoSolucion.FIN_VELOCIDAD_MAXIMA));
         }
         for (int i = 0; i <14; i++) {
             cartaRepositorio.save(new CartaSolucion(TipoSolucion.SIGA));
         }
 
         //CartaSeguridad
-        cartaRepositorio.save(new CartaSeguridad(TipoSeguridad.prioridadDePASO));
-        cartaRepositorio.save(new CartaSeguridad(TipoSeguridad.asDelVOLANTE));
-        cartaRepositorio.save(new CartaSeguridad(TipoSeguridad.combustibleEXTRA));
-        cartaRepositorio.save(new CartaSeguridad(TipoSeguridad.aPruebaDePINCHADURAS));
+        cartaRepositorio.save(new CartaSeguridad(TipoSeguridad.PRIORIDAD_DE_PASO));
+        cartaRepositorio.save(new CartaSeguridad(TipoSeguridad.AS_DEL_VOLANTE));
+        cartaRepositorio.save(new CartaSeguridad(TipoSeguridad.COMBUSTIBLE_EXTRA));
+        cartaRepositorio.save(new CartaSeguridad(TipoSeguridad.A_PRUEBA_DE_PINCHADURAS));
     }
 
     public List<Carta> getCartas(){
         return cartaRepositorio.findAll();
     }
+
     public Carta getCartaById(int id){
         Optional<Carta> cartaOptional = cartaRepositorio.findById(id);
         if (cartaOptional.isEmpty()){

@@ -1,5 +1,5 @@
 package com.cami.millas.cartas;
 
 public enum TipoProblema {
-    STOP, velocidadMAX, faltaCOMBUSTIBLE, CHOQUE, PINCHADURA
+    STOP, VELOCIDAD_MAX, FALTA_COMBUSTIBLE, CHOQUE, PINCHADURA
 }

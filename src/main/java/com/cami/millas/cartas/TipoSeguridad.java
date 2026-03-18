@@ -1,5 +1,5 @@
 package com.cami.millas.cartas;
 
 public enum TipoSeguridad {
-    prioridadDePASO, combustibleEXTRA, asDelVOLANTE, aPruebaDePINCHADURAS
+    PRIORIDAD_DE_PASO, COMBUSTIBLE_EXTRA, AS_DEL_VOLANTE, A_PRUEBA_DE_PINCHADURAS
 }

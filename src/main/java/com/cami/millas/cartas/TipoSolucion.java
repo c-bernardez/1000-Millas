@@ -1,5 +1,5 @@
 package com.cami.millas.cartas;
 
 public enum TipoSolucion {
-    SIGA, finVelocidadMAXIMA, COMBUSTIBLE, TALLER, ruedaAUXILIO
+    SIGA, FIN_VELOCIDAD_MAXIMA, COMBUSTIBLE, TALLER, RUEDA_AUXILIO
 }
