@@ -11,7 +11,7 @@ public class Mano {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int idMano;
-
+ 
     @ManyToOne
     @JoinColumn(nullable = false)
     private Partida partida;
