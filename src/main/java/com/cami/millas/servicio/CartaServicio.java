@@ -16,7 +16,7 @@ public class CartaServicio {
         this.cartaRepositorio = cartaRepositorio;
     }
 
-    public void InicializarMazo() {
+    public void inicializarMazo() {
         if (cartaRepositorio.count() > 0) return;
 
         //CartaDistancia
