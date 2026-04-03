@@ -17,8 +17,8 @@ public class ManoServicio {
         this.manoRepositorio = manoRepositorio;
     }
 
-    public Mano inicializarMano(Partida partida, Jugador jugador){
-        return manoRepositorio.save(new Mano(partida, jugador));
+    public Mano inicializarMano(Mano mano){
+        return manoRepositorio.save(mano);
     }
 
     public Mano getManoById(int id){
